@@ -74,7 +74,20 @@
     .row{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px solid var(--line)}
     .row:last-child{border:0}.row span{color:var(--muted);font-size:13px}.row b{font-size:14px}
     .cta{padding:55px;border-radius:28px;background:linear-gradient(135deg,#0c4561,#142a52);border:1px solid rgba(22,217,255,.28);position:relative;overflow:hidden}
-    .cta:after{content:"VOLLEYBALL";position:absolute;right:-30px;bottom:-45px;font:700 100px Oswald;color:rgba(255,255,255,.04)}
+    .cta:after{
+  content:"VOLLEYBALL";
+  position:absolute;
+  right:-30px;
+  bottom:-45px;
+  font:700 100px Oswald;
+  color:rgba(255,255,255,.04);
+  pointer-events:none;
+}
+
+.cta > *{
+  position:relative;
+  z-index:2;
+}
     .cta p{color:#c3d2e4;max-width:650px;margin:13px 0 22px}
     footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
     .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
